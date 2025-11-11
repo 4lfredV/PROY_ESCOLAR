@@ -17,10 +17,10 @@ header {
 
 .logo {
   width: 90px;
-  position: absolute;
+  /*position: absolute;
   left: 20px;
   top: 20px;
-  border-radius: 10px;
+  border-radius: 10px;*/
 }
 
 .subtitulo {
