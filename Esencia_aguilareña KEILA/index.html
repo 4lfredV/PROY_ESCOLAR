@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Emprendimiento</title>
+    <style>
+        /* === ESTILOS GENERALES === */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #0077b6;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #023e8a;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd60a;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #023e8a;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* === SERVICIOS === */
+        .servicios {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .servicio {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .servicio:hover {
+            transform: scale(1.05);
+        }
+
+        /* === PRODUCTOS === */
+        .productos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .producto {
+            background-color: #fff;
+            border-radius: 10px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .producto:hover {
+            transform: scale(1.05);
+        }
+
+        .producto img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .producto h3 {
+            margin: 10px 0;
+            color: #0077b6;
+        }
+
+        .producto p {
+            padding: 0 10px 15px;
+        }
+
+        /* === CONTACTO === */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 500px;
+            margin: auto;
+        }
+
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        button {
+            background-color: #0077b6;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #023e8a;
+        }
+
+        footer {
+            background-color: #023e8a;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>ESENCIA AGUILAREÑA</h1>
+        <p>Ven y disfruta tu merienda diferente </p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#Productos">Productos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <section class="imagen">
+       <img src="WhatsApp%20Image%202025-10-30%20at%2014.25.00%20(1).jpeg" alt="imagen principal">
+    </section>
+    <section id="inicio">
+        <h2>Bienvenidos</h2>
+        <p>Somos un emprendimiento dedicado a ofrecer  productos y servicios . Nuestro objetivo es brindar la mejor calidad y atención a cada cliente para que tenga una merienda diferente y la pueda disfrutar porque todos merecemos un descanso de lo abitual.</p>
+    </section>
+
+    <section id="Productos">
+        <h2>PRODUCTOS</h2>
+        <div class="Productos">
+            <div class="Producto">
+                <h3>BEBIDAS</h3>
+                <p>Infuciones Naturales,   
+                Licuados y Batidos ,
+                Submarino,
+                Cafe y Te ,Jugos naturales </p>
+            </div>
+            <div class="Producto">
+                <h3>PARA ACOMPAÑAR </h3>
+                <p>Maisena,Pastaflora,Macita, Arrollado y Galletas</p>
+            </div>
+            <div class="Producto">
+                <h3>DISFRUTA </h3>
+                <p>Estamos para que tengas una merienda diferente.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contáctanos</h2>
+        <form action="#" method="post">
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Tu correo electrónico" required>
+            <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; Esencia Aguilareña 2025 . ESCUELA TECNICA </p>
+    </footer>
+
+</body>
+</html>
